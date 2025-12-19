@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>가상 클래스 3</title>
+	<style>
+		/* ------------------ CSS2 -------------- */
+		/* ol>li:nth-child(2){
+			background-color: #ff0;
+		} */
+
+		/* ------------------ CSS3 -------------- */
+		/* ol>li:nth-of-type(2) {
+			background-color: #ff0;
+		} */
+
+		ol>li:nth-of-type(2n+1) {
+			background-color: #0f0;
+		}
+	</style>
+</head>
+<body>
+	<h1>pseudo-class</h1>
+  <ol>
+    <li>항목 1</li>
+    <ul>
+      <li>추가 1</li>
+      <li>추가 2</li>
+      <li>추가 3</li>
+    </ul>
+    <li>항목 2</li>
+    <li>항목 3</li>
+    <li>항목 4</li>
+    <li>항목 5</li>
+    <li>항목 6</li>
+    <li>항목 7</li>
+    <li>항목 8</li>
+    <li>항목 9</li>
+    <li>항목 10</li>
+  </ol>
+</body>
+</html>

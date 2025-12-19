@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>가상 클래스 1</title>
+	<style>
+		/* 
+		========================================
+		[부모의 첫 번째 자식 li에 스타일 적용] 
+		========================================
+		*/
+		/* ---------- CSS2 ------------- */
+		/* 부모가 누구든 첫 번째 li */
+		/* li:first-child {
+			background-color: #ff0;
+		} */
+		
+		/* 부모가 ul인 엘리먼트의 첫 번째 자식 li */
+		/* ul>li:first-child{
+			background-color: #ff0;
+		} */
+		
+		/* ---------- CSS3 ------------- */
+		/* [부모가 누구든 첫 번재 li] */
+		/* li:first-of-type {
+			background-color: #ff0;
+		} */
+
+		ul>li:first-of-type {
+			background-color: #ff0;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>pseudo-class</h1>
+  <ul>
+    <ol>
+      <li>추가 항목 1</li>
+      <li>추가 항목 2</li>
+      <li>추가 항목 3</li>
+    </ol>
+    <li>첫번째</li>
+    <li>두번째</li>
+    <li>세번째</li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusantium vitae doloremque quas maiores, cum, libero quo hic corrupti laudantium deserunt optio? Quasi quaerat facere deleniti error quas, tenetur dignissimos.</p>
+</body>
+</html>
