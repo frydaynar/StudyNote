@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>선택자 사용법 3</title>
+	<style>
+		/* 방문하지않은 link */
+		a:link{
+			color:#0f0;
+
+			/* 밑줄 빼고 싶을 때 */
+			text-decoration: none;
+		}
+
+		/* 방문한 link */
+		a:visited{
+			color: #ddd;
+		}
+
+		/* 마우스를 올려 놨을 때 */
+		a:hover{
+			color: #f00;
+			text-decoration: underline;
+		}
+
+		/* 클릭했을 때 */
+		a:active{
+			color: #00f;
+		}
+		
+		/* 탭키 */
+		a:focus{
+			background-color: #ff0;
+		}
+	</style>
+</head>
+<body>
+	<h1>pseudo-class</h1>
+  <ol>
+    <li><a href="https://www.naver.com">naver</a></li>
+    <li><a href="www.daum.net">daum</a></li>
+    <li><a href="https://www.atom.io">atom</a></li>
+  </ol>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quo quae saepe, at cupiditate eaque omnis, aliquid, similique ex nesciunt nostrum. Officia deserunt quasi dolorem eaque ipsum laborum! Quaerat, ea?</p>
+</body>
+</html>

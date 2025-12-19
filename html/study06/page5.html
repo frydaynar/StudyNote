@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>선택자 사용법 5</title>
+	<style>
+		/* 플롯 해제 할 때 주로 사용 */
+		h1::before {
+			/* content → 글을 넣을 수 있음 */
+			content: "이전";
+			color: red;
+		}
+		h1::after {
+			content: "이후";
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>pseudo-element</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam recusandae ratione cupiditate, minima molestiae delectus voluptatibus, quaerat iste, ipsa molestias provident assumenda possimus officia. Quae odio tempore nobis voluptates necessitatibus.</p>
+</body>
+</html>

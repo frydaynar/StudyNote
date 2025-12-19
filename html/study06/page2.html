@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>선택자 사용법 2</title>
+	<style>
+		/* 
+		=============================================
+		= 전체 일치
+		^= 시작하는
+		$= 끝나는
+		*= 일부 문자 (단어 중 일부 문자)
+		~= 단어 일치
+		=============================================
+		*/
+		a[href^="https"] {
+			background-color: purple;
+			color:#fff;
+		}
+		a[href$="net/"]{
+			color:red;
+		}
+		li[title*="ip"]{
+			color:aqua;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+    <li><a href="https://www.daum.net/">daum</a></li>
+    <li><a href="https://www.naver.com/">naver</a></li>
+    <li><a href="mailto:help@host.co.kr" title="mail">help</a></li>
+    <li title="lorem ipsum">Lorem ipsum dolor sit amet.</li>
+    <li title="lorem">Lorem ipsum dolor sit amet.</li>
+  </ul>
+</body>
+</html>

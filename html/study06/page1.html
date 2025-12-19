@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>선택자 사용법 1</title>
+	<style>
+		/* 선택자 : 태그, 아이디, 클래스 */
+		/* style이 중복 될 경우 항상 마지막에 있는 것이 적용 됨 */
+
+		span {
+			color:#0f0;
+		}
+		/* 아래↓에 똑같은 span이 있어서 위↑에거가 무시 됨 */
+		span {
+			color:#f00;
+		}
+		
+		/* > : 바로 아래를 가르킴 */
+		div>span {
+			color:#999;
+		}
+
+		div.first-class>span{
+			background-color: #ff0;
+		}
+		/* 아래↓에 span과 대상이 같아서 위↑에거가 무시됨 */
+		#ex span{
+			background-color: aqua;
+		}
+
+		h1, h2 {
+			border-style: solid;
+		}
+	</style>
+</head>
+<body>
+	<div id="ex">
+    <h1>Heading 1</h1>
+    <h2>Heading 2-1</h2>
+    <div class="first-class">
+      <span>span tag1</span>
+      <p>
+        <span>span tag2</span>
+      </p>
+    </div>
+    <span>span tag3</span>
+  </div>
+  
+  <div class="second-class">
+    <h2>Heading 2-2</h2>
+    <span>span tag4</span>
+  </div>
+  
+  <span>span tag5</span>
+</body>
+</html>
