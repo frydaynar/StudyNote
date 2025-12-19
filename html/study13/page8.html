@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>객체 축약 표현</title>
+	<script>
+    // 객체 형태 =====================
+    const obj = {
+      key: '값',  // property 
+    };
+
+    // 1. 키와 값이 같을 때 =================
+    const name = '박보검';
+    const age = 36;
+
+    // 1-1. 키와 값을 모두 설정
+    // const info = {
+      //   name: name,
+      //   age: age,
+      // };
+      
+    // 1-2. 축약 표현
+    // : 키와 값이 같다면, 값 생략 가능
+    const info = {name, age};
+
+    console.log(info);
+    console.log('객체 info의 property name >> ', info.name);
+    console.log('객체 info의 property name >> ', info['name']);
+
+    // 2. 값이 함수인 경우 =================
+    // 2-1. 
+    // const say = {
+    //   hi: function () {
+    //     console.log('안녕, 반가워~')
+    //   }
+    // };
+    
+    // 2-2.
+    const nickname = '박보검'
+    
+    const say = {
+      hi () {
+        console.log('안녕, 반가워~')
+      },
+      nickname,
+    };
+
+    say.hi();
+    console.log('닉네임 :', say.nickname)
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

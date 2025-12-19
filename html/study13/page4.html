@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>문자열</title>
+	<script>
+    
+    const today = "Good~"; // const(상수 변수)
+    // 문자열 길이
+    console.log('문자열 길이 :', today.length)
+    
+    /* 
+      1.length
+        var a = '가나다라';
+        a.length;
+        -> 4
+    */
+
+    
+    // 특정 문자 변경
+    // -일치하는 첫 번째만 변경
+    console.log(today.replace('o', 'ap-'))
+    // 일치하는 모두 변경
+    console.log(today.replaceAll('o', 'ap-'))
+
+    /*
+      2. replace
+        var a ='가나다라';
+        a.replace("다", "하");
+        -> 가나하라
+
+        var a = '가나다라다라다라';
+        a.replace("다", "하");
+        -> 가나하라다라다라
+          : 첫 번째만 변경
+
+        var a = '가나다라다라다라';
+        a.replaceAll("다", "하");
+        -> 가나하라하라하라
+    
+    */
+
+
+    
+    
+    // 특정 위치의 문자 추출
+    // 1. 문자열.substring(시작 인덱스, 끝 인덱스)
+    // : 끝 인덱스 제외
+    // const today = "Good~";
+    console.log(today.substring(1, 4))
+    /*
+      ※ Index는 0부터 시작함 / length는 +1된 상태임
+
+      (예시)
+      var today = "Good~";
+      console.log(today.length);
+      console.log(today.substring(1, 4));
+      -> 5
+      -> ood
+      
+      ※ 눈으로 세면 4는 '~'인데 왜 'ood'만 나오는가?
+        : 인덱스의 스타트 지점을 알아야 함.
+        : [index 0] G [index 1] o [index 2] o [index 3] d [index 4] ~
+        : 따라서 (1, 4)의 인덱스 시작과 끝을 고려하면 'ood'만 나오는 것을 알 수 있음
+        : (물결까지 나오려면 (1, 5)로 지정해야 함)
+    */
+
+
+    // 2. 문자열.slice(시작 인덱스, 끝 인덱스)
+    console.log(today.slice(1, 5))
+    console.log(today.slice(1))
+    console.log(today.slice(-4))
+    /*
+      ※ 일종의 식칼 역할을 함 (잘라냄)
+
+      (예시)
+      console.log(today.slice(1, 5))
+      console.log(today.slice(1))
+      console.log(today.slice(-4))
+      -> ood~
+      -> ood~
+      -> ood~
+
+      today.slice()
+      -> 'Good~'
+
+      ※ 시작지점부터 잘라낸 모든 것
+
+      ※ 시작지점이 음수임에도 왜 같은 값이 나올까?
+        : [시작지점&방향 '양수 →'] Good~
+        [index 0] G [index 1] o [index 2] o [index 3] d [index 4] ~
+        : Good~ ['← 음수' 시작지점&방향]
+         G [index -4] o [index -3] o [index -2] d [index -1] ~ [index 0]
+    */
+
+    
+    // 특정 문자 기준으로 분리(쪼개기)
+    // : 배열로 리턴
+    // : 기준으로 사용된 문자는 요소에 없음
+    // const today = "Good~";
+    console.log(today.split('d'))
+    /*
+      (예시1)
+      var a = "가나다가나다가나다";
+      a.split('나다')
+      -> (4) ['가', '가', '가', '']
+      b[b.length] -1
+      -> ''
+      
+      ※ 왜 저렇게 나올까?
+        : 가(나다)가(나다)가(나다) -> 나다가 잘림
+        : 가←가←가←(마지막 나다가 잘리면서 생긴 공간)
+
+      ※ index 알아보기
+        [(0)'가', (1)'가', (2)'가', (3)'']
+
+      ※ length는 index+1 -> (4)
+
+      (예시2)
+      var a = "가나다가나다가나다";
+      var b = a.split('');
+      b
+      -> (9) ['가', '나', '다', '가', '나', '다', '가', '나', '다']
+
+      ※ '' : 문자를 각각 쪼갬 -> 문자열을 뽑기 위한 구분자
+
+      ★ 알아보자
+        var a = "Hello Javascript";
+        a.split('l')
+        -> (3) ['He', '', 'o Javascript']
+        a.split('ll')
+        -> (2) ['He', 'o Javascript']
+
+
+    */
+
+
+    // 특정 문자 추가
+    // 문법 : 문자열.padStart(문자열 전체 길이, '추가할 문자')
+    // const today = 'Good~' ;
+    console.log(today.padStart(10, '*'))
+    // 문법 : 문자열.padEnd(문자열 전체 길이, '추가할 문자')
+    console.log(today.padEnd(10, '*'))
+
+    /*
+      today.padStart(10, '*')
+      -> *****Good~
+
+      today.padEnd(10, '*')
+      -> Good~*****
+
+      ※ 포인트 : 일종의 padding 개념
+        *****[Start지점]Good~
+        Good~[End지점]*****
+    */
+
+
+    // 특정 문자 찾기 : true/false
+    // : 포함하냐 안하냐
+    console.log(today.includes('d')) // true
+    console.log(today.includes('Go')) // true
+    console.log(today.includes('go')) // 대소문자 구분해서 false
+
+
+
+    // 특정 문자의 위치(index) 리턴
+    // - 있음 : 탐색된 첫 번째 문자의 인덱스 리턴
+    // - 없음 : -1 리턴
+    // const today = 'Good~';
+    console.log(today.indexOf('o'))
+    console.log(today.indexOf('Go'))
+    console.log(today.indexOf('h'))
+    /*
+      (예시)
+      today.substring(today.indexOf('o'), today.length)
+      -> ood~
+
+      ※ [0]G[1]o[2]o[3]d[4]~
+    */
+
+
+
+    // 반복
+    console.log(today.repeat(3))
+    console.log('안녕'.repeat(3))
+
+    // 대소문자 변경
+    console.log(today.toUpperCase())
+    console.log(today.toLowerCase())
+
+    // 공백 제거
+    const say = '  Hi~  ';
+    console.log(say);
+    console.log('|'+say+'|');
+    console.log('|'+say.trimStart()+'|'); // 왼쪽 공백 제거
+    console.log('|'+say.trimEnd()+'|'); // 오른쪽 공백 제거
+    console.log('|'+say.trim()+'|'); // 양쪽 공백 제거
+
+    /*
+      (예시)
+      var a = " 1 2 3 "
+
+      ※ 1앞의 공백만 제거됨
+        a.trimStart()
+        -> '1 2 3 '
+      
+      ※ 모든 공백을 제거하려면 replaceAll(" ", "")을 추가해줘야함
+        a.trim().replaceAll(" ", "")
+        -> '123'
+
+      ※ replaceAll(" ", "")만 사용해도 모든 공백이 제거되지만 굳이 trim을 왜 쓸까?
+        : 장문의 글에서 밀려있는 것들을 정리할때 좋음
+    */
+
+
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

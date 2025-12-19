@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>자료형</title>
+	<script>
+		/*
+		[기본 타입] Primitive Type
+		- number    : 숫자(정수, 실수)
+		- bigint    : 정수 -(2의 53승 -1) ~ 2의 53승-1
+		- string    : 문자열
+			※ String이 범위가 더 넓기 때문에 number(숫자)는 String에 들어갈 수 있음
+				: 단, 영역으로 봤을 때 개념이 들어간다는거지 실제로는 분리되어 있음
+				
+			※ 그렇다면 왜 굳이 분류했는가?
+				: 문자는 연산할 수 없기 때문
+				: (예시) 5 + 1 = 6 이 되지만 5 + "1" = 51로 나옴 (51은 같이 문자열로 읽혀진 상황)
+
+			※ 비교자
+				: 5 == "5" -> true (==는 값만 비교함)
+				: 5 === "5" -> false (===는 값과 타입까지 비교함)
+				
+				: typeof num === "boolean" -> true (typeof를 통해 자료형을 비교함)
+
+
+		- boolean   : 논리값(true, false)
+
+		- undefined : 초기화되지 않은 상태, 변수 초기화에 사용
+			※ Javascript에서만 사용됨
+
+			※ undefined가 나오는 경우
+				1) document.write("1111");=
+				: 함수에 입력값은 있지만 출력(retrun)값이 없어서 undefined가 나옴
+
+				2) let a:
+				: 입력값이 없어서 undefined가 나옴
+
+		- null      : 객체 변수 초기화 사용
+			※ let a = null; -> undefined
+			※ a -> null
+
+		- NaN       : Not a Number
+			※ 숫자의 기본은 0인데 비어있는 경우 NaN이 나옴 -> 초기값을 0으로 바꾸거나 예외처리 해줘야함
+
+
+		[참조 타입] 참조형(객체), Reference Type
+		- array : 배열
+		- function : 함수
+		- ...
+		*/
+
+		/* 
+			1. 객체 지향형 프로그래밍
+				: 참조가 필요함
+		*/
+
+		// [변수선언]
+		// var 변수명;
+
+		/*
+			1. 변수 : 무엇이든지 담을 수 있음
+				var 변수명;
+				변수명 = 1;
+				변수명 = "글"
+				변수명 = null
+
+			2. 브라우저(Console)에 쳐보면서 확인해보면서 공부하세요
+		*/
+
+		/*
+			※ var은 모든지 담을 수 있는 그릇같은 것이라 바뀌기가 너무 쉬움
+				: let / const('상수'로 변하지 않음)로 사용해서 오류 줄임
+		*/
+		var num;
+
+		
+		// undefined
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num); // typeof : type을 알아볼 수 있음, 어떤 자료형인지 확인 가능
+		document.write('<br>');
+		
+		//number
+		num = 100;
+		document.write('num >>' +num + '<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		// bigint
+		num = 5n;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		// number
+		num = 2.2;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		// string
+		num = '안녕';
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+		
+		// boolean
+		num = true;
+		document.write('num >>' +num);
+		document.write('<br>');
+		document.write('num type >>', typeof num);
+		document.write('<br>');
+	</script>
+</head>
+<body>
+</body>
+</html>

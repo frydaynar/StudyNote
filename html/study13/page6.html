@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>배열 함수</title>
+	<script>
+    const even = [2, 4, 6];
+    console.log(even);
+    
+    // [property 추가] ========
+    // 1) 맨 뒤에 추가
+    even.push(8);
+    console.log(even);
+    
+    even.push(10, 12);
+    console.log(even);
+    
+    // 2) 맨 앞에 추가
+    even.unshift(-2);
+    console.log(even);
+    
+    even.unshift(-4,-6);
+    console.log(even);
+    
+    // [property 삭제] ========
+    // 1) 맨 뒤에서 삭제
+    const pop1 = even.pop();
+    const pop2 = even.pop();
+    console.log(even);
+    console.log('pop1 : ', pop1);
+    console.log('pop2 : ', pop2);
+    
+    // 2) 맨 앞에서 삭제
+    const shift1 = even.shift();
+    console.log(even);
+    console.log('shift1 : '  , shift1);
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>

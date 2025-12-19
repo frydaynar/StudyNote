@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>문자열</title>
+	<script>
+    /*
+    [문자열] ===================================================================
+    * 템플릿 리터럴 : 백틱 사용
+    : 이중 따옴표나 작은 따옴표 대신 백틱(`)을 사용해서 표현
+    : 작은 따옴표와 혼동할 수 있으나, 백틱은 일반적으로 키보드 tab 키 위에 있음
+    : 플래이스 홀더를 이용한 ${expression}으로 표현식 사용
+    ============================================================================
+    */
+   var age = 35;
+   var name = '홍길동';
+
+   var message = '저는 ' + name + '이고, 나이는 ' + age + '세 입니다.';
+   var messageTwo = `저는 ${name}이고, 나이는 ${age}세 입니다.`; // ${ '변수'를 넣거나 '연산'도 가능함 }
+
+   /*
+      (예시 1)
+        var a =1;
+        var b = 5;
+
+        var c = `${a * b}`;
+        
+        c;
+
+        -> '5' : 연산에서 숫자를 넣어도 문자열로 나옴
+
+      (예시 2)
+        var a =1;
+        var b = 5;
+
+        var c = a * b;
+        
+        c;
+
+        -> 5 : 연산에서 숫자로 나옴
+
+      ================================================
+        ※ 즉 '백틱'은 문자로 변환해서 받아야 하는 경우 이용함 (문자열을 조합하는 방법)
+
+
+   */
+
+   console.log(message);
+   console.log(messageTwo);
+  </script>
+</head>
+<body>
+	<h1>개발자 모드 (F12) >> console 탭에서 확인하세요.</h1>
+</body>
+</html>
