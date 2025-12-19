@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>form</title>
+</head>
+<body>
+	<h1>폼 태그</h1>
+
+  <form action="result.html" method="get">
+
+		<fieldset>
+			<legend>회원 가입</legend>
+			<p>
+				<label for="userName">이름 : </label>
+				<input type="text" id="userName" name="userName">
+			</p>
+
+			<p>
+				<label for="city">거주지역 : </label>
+				<select name="city" id="city" size="1" multiple>
+					<option value="seoul">서울</option>
+					<option value="inchen">인천</option>
+					<option value="daegu" selected>대구</option>
+					<option value="jeju">제주</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="infor">간단한 소개</label> <br>
+				<textarea name="infor" id="infor" cols="30" rows="5"></textarea>
+			</p>
+		</fieldset>
+
+		<p>
+			<input type="reset" value="취소">
+			<input type="submit" value="전송">
+		</p>
+  
+  </form>
+</body>
+</html>
