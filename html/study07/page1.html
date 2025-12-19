@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>color</title>
+	<style>
+		h2 {
+			color: #ff0000;
+			color: #f00;
+			color: red;
+			color:#03c75a;
+			}
+			h2.one {
+				color: rgb(0, 255, 0);
+			}
+			h2.two {
+				/* 
+				[alpha : 색 불투명도]
+					0.0     ~     1.0
+				완전 투명     완전 불투명
+				*/
+				color: rgba(0, 0, 255, 0.1);
+			}
+			h2.three {
+				/*
+				[hsl(색, 채도, 명도)]=================================
+				* 색  : 0~360 사이의 색상환 각도
+							: 0-빨간색, 120-녹색, 240-파란색
+				* 채도: 색의 강도, 선명도, 쨍한 정도,
+								채도가 낮으면 탁하고(회색) 높으면 선명(풀 컬러)
+							: [백분율 값] 0% - 회색 음영, 100% - 풀 컬러
+				* 명도: 빛의 밝기, 높은 명도는 흰색이고 낮은 명도 검정
+							: [백분율 값] 0% - 검정, 50% - 밝거나 어둡지 않음, 100% - 흰색
+				======================================================
+				*/
+				color: hsl(120, 30%, 37%)
+			}
+	</style>
+</head>
+<body>
+	<h1>color</h1>
+  <h2>CSS BASIC</h2>
+  <h2 class="one">CLASS ONE</h2>
+  <h2 class="two">CLASS TWO</h2>
+  <h2 class="three">CLASS THREE</h2>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptatum doloribus. Modi veritatis possimus at ipsam recusandae! Exercitationem, perferendis ab. Aliquam blanditiis quo quam nemo aspernatur, rerum officiis modi iusto.</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>폰트 알아보기</title>
+	<style>
+		body {
+			font-variant: small-caps;
+		}
+		#size-px {
+			font-size: 20px;
+		}
+		/* 1em = 16px */
+		#size-em {
+			font-size: 2em;
+		}
+		/* 1vw = 1% */
+		/* view width : 가로 100%에서 n% */
+		/* 단, 확대,축소에서는 반영이 안됨 */
+		#size-vw {
+			font-size: 5vw;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+    <h2>font size : px</h2>
+    <div id="size-px">Lorem ipsum dolor sit amet.</div>
+    
+    <h2>font size : em</h2>
+    <div id="size-em">Lorem ipsum dolor sit amet.</div>
+    
+    <h2>font size : vw(viewport width)</h2>
+    <div id="size-vw">Lorem ipsum dolor sit amet.</div>
+  </div>
+</body>
+</html>
