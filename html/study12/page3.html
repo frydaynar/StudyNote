@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>relative, static 알아보기</title>
+	<style>
+		
+		/* position의 기본은 static */
+		/* relative는 absolute 사용할때 필요함 */
+
+		.box {
+			width: 200px;
+			padding: 10px;
+			border: 5px solid #000;
+			background-color: rgba(255, 0, 0, 0.5);
+			font: 16px verdana;
+		}
+		.box::first-letter{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.area {
+			position: relative;
+			left: 100px;
+			top: 100px;
+			width: 800px;
+			border: 3px dashed #f00;
+		}
+		.a {
+			position: static;
+			/* top: 50px; */
+			/* left: 50px; */
+			/* z-index: 10; */
+			background-color: rgba(255, 0, 0, 0.5);
+		}
+		.b {
+			position: relative;
+			/* margin은 여백을 주는 것. */
+			margin-top: 50px; 
+			/* top: 50px; */
+			/* left: 100px; */
+			/* z-index: 15; */
+			background-color: rgba(0, 255, 0, 0.5);
+		}
+		.c {
+			position: static;
+			/* top: 50px; */
+			/* left: 150px; */
+			/* z-index: 20; */
+			background-color: rgba(0, 0, 255, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="area">
+	<!-- 클래스는 복합적으로 나열해서 사용 가능 -->
+    <div class="box a">A Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, sunt enim porro debitis quos obcaecati! Est veritatis omnis eveniet nam hic itaque nesciunt ullam magnam deserunt ab, blanditiis praesentium ipsum!</div>
+    <div class="box b">B Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui explicabo nulla, ipsam eos quis incidunt culpa eum vero, exercitationem accusantium omnis laboriosam magnam quidem odit minima officia architecto fuga!</div>
+    <div class="box c">C Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid quaerat consequatur temporibus minus? Dolorem soluta, vitae tempore praesentium, doloremque alias perferendis, mollitia reprehenderit aliquam enim esse autem? Placeat, asperiores!</div>
+  </div>
+  <hr>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque expedita dignissimos alias magni? Beatae quidem ullam quaerat doloremque natus saepe tempora enim laudantium maxime. Animi repellat necessitatibus commodi quibusdam.</p>
+  <div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus totam, adipisci corporis qui molestias laboriosam cum odio, culpa expedita itaque deleniti autem ea harum natus aspernatur impedit. Explicabo, ipsa hic.</div>
+    <div>Dolor reprehenderit blanditiis veritatis aliquam voluptatibus impedit, optio esse ea incidunt qui! Sequi culpa perspiciatis in voluptatibus. Iusto soluta voluptatibus, inventore asperiores, iste ipsum temporibus similique quibusdam, quasi eos eius!</div>
+    <div>Nesciunt incidunt enim odit sit repudiandae eum quam adipisci rerum tempora labore, aliquid vitae totam a ipsum earum unde maiores mollitia aspernatur doloribus nemo id quo similique obcaecati! Cum, incidunt!</div>
+    <div>At architecto vero voluptatibus numquam, inventore nisi illo porro asperiores quaerat, optio doloremque. Architecto, amet explicabo ut quidem sit commodi quis obcaecati eum praesentium excepturi repellendus ipsam, sequi porro minima.</div>
+    <div>Maxime cupiditate iste minus optio, commodi aut officia inventore accusamus itaque fugit veritatis tempora illum. Officiis, cumque reiciendis. Animi consequatur ad alias nulla ipsa explicabo sequi ratione laudantium magnam dolorem!</div>
+    <div>Et eveniet rerum tenetur deleniti odit explicabo ullam illum sequi nobis exercitationem. Debitis, velit qui inventore ex est dicta consequatur. Iste quidem cumque fuga excepturi ut a recusandae impedit harum.</div>
+    <div>Aspernatur ipsum error temporibus, suscipit repellat odit officiis? Accusamus recusandae optio est veritatis eius sit minus vel esse autem culpa eos obcaecati illum ad, voluptatum inventore quasi iste possimus quisquam.</div>
+    <div>Repellendus eum rem error impedit magnam, cum totam itaque obcaecati iusto sunt! Dicta iusto minima in! Facere, molestiae, dolorem id ut sit nisi repellat vero laudantium cumque explicabo mollitia? Magni!</div>
+    <div>Esse laboriosam repellat consequatur ea magni autem laborum quis libero nam, temporibus perferendis optio ipsum voluptas. Non iusto tempore, sint quia libero, incidunt aliquid, doloremque omnis eaque rem atque doloribus?</div>
+    <div>Laudantium neque quibusdam possimus hic blanditiis incidunt id illum mollitia itaque eum ratione explicabo cumque ea eos corporis quae nostrum voluptatum molestias beatae modi sit aperiam, sed deleniti doloremque. Reprehenderit.</div>
+    <div>Assumenda maiores esse maxime itaque harum debitis dolore ex incidunt! Nemo itaque praesentium quasi unde voluptatum ratione fuga nisi assumenda quis ex maiores, eius exercitationem, debitis vel autem voluptates! Ullam.</div>
+    <div>Ullam repellat architecto autem doloribus tempore. Rerum natus maxime temporibus libero maiores minima nihil autem, beatae, nisi nostrum, optio quia error mollitia. Amet similique voluptatibus fugiat ipsum sed eos ea.</div>
+    <div>Hic distinctio autem eum excepturi labore eveniet, harum similique nihil eos. Quia sit est saepe, neque labore temporibus similique veniam, esse, voluptatum cumque reprehenderit! Nulla voluptatibus expedita sapiente aperiam tempore.</div>
+    <div>Natus rerum repellat pariatur consequuntur, velit possimus. Consequuntur autem sed aliquid voluptas fugit ea, magnam quibusdam dignissimos blanditiis unde, neque officia ipsa libero iste aperiam beatae iure. Qui, rem quam!</div>
+    <div>Culpa natus recusandae nam sint ratione porro laborum. Voluptatibus amet facilis nostrum maiores eum, vel omnis possimus fugiat magni ratione eveniet sequi, quidem aspernatur laboriosam, sapiente sint natus nisi? Rerum?</div>
+    <div>Quos sit debitis facere praesentium tempora, impedit explicabo atque iusto ea accusantium inventore pariatur nisi dignissimos repudiandae nemo, dolorum ullam. Maxime sit expedita consequatur nostrum nam ex illo facere totam.</div>
+    <div>Numquam delectus doloremque mollitia exercitationem eligendi blanditiis molestias, dignissimos est doloribus consequatur commodi magnam impedit atque labore in quaerat perspiciatis, repellendus ratione aspernatur. Eos culpa aliquid provident, temporibus ad exercitationem.</div>
+    <div>Maiores sed praesentium rerum commodi, eligendi rem minima totam, voluptates eveniet ex, explicabo voluptas error. Quis deleniti dignissimos, odio omnis impedit a ab possimus corporis nihil aliquid fugiat tempore! Vitae!</div>
+    <div>Eligendi inventore sed temporibus quos sint libero nisi illum atque. Ducimus minima nisi blanditiis autem fuga aliquid illo, similique iure in atque corrupti veniam expedita cupiditate! Facilis alias itaque consectetur!</div>
+    <div>Deleniti quibusdam neque voluptatem commodi beatae recusandae ullam, magnam laboriosam, impedit aut distinctio a sint in perferendis doloremque et minima. Fugit aliquid assumenda unde blanditiis dolorem enim voluptates ullam nisi?</div>
+  </div>
+</body>
+</html>
