@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>background 2</title>
+	<style>
+		.box {
+			border: 3px double #00f;
+			background-color: #ff0;
+			background-image: url(img/ai-generated-8687486_1280.jpg);
+
+			width: 1800px;
+			height: 1000px;
+
+			/* repeat | repeat-x | repeat-y | no-repeat */
+			background-repeat: no-repeat;
+
+			/* 
+			[위치 지정] ==============================
+			* 가로 x 세로 : 
+			- left/right/center x top/bottom/center
+			- ex) background-position: right bottom;
+
+			* 수평(왼/오) x 수직(위/아래)
+			- left top      0 0
+			- center center 50% 50%
+			- right bottom  100% 100%
+			
+			* 수평(왼/오) x 수직(위/아래)
+			- left   top       0 0
+
+			*/
+			background-position: -250px -200px;
+
+			/* scroll | fixed */
+			background-attachment: fixed;
+			/* shorthand */
+			background: #0ff url(img/ai-generated-8687486_1280.jpg) no-repeat center center;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eaque fugiat ullam veritatis odio, qui nobis consequuntur soluta et, adipisci rerum dolorum exercitationem id voluptas iste cumque, rem aliquid placeat.</div>
+</body>
+</html>

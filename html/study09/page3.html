@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>background 3</title>
+	<style>
+		.box{
+			width: 400px;
+			height: 100px;
+			border: 3px solid #00f;
+			padding: 20px;
+			margin: 30px;
+			background: url(img/ai-generated-8687486_1280.jpg) no-repeat center center;
+		}
+		.box2 {
+			/* 
+			- 가로, 세로 꽉 차게 (비율 깨짐) 
+			background-size: 100% 100%;
+			
+			- 가로 꽉 차게, 세로 비율 유지
+			background-size: 100% auto;
+
+			- 세로 꽉 차게, 가로 비율 유지
+			background-size: auto 100%;
+
+			- 이미지가 찌그러지지 않는 한도 내에서 가장 크게
+			- 이미지 짤리는 부분이 생길 수 있음
+			background-size: cover;
+
+			- 이미지가 짤리는 부분 없이, 모두 표현
+			- 여백이 생길 수 있음
+			background-size: contain;
+			*/
+			background-size: 250px 150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur suscipit consequatur ipsum earum, tempore itaque excepturi nostrum eos dolorem repellat nisi aliquam exercitationem officia eius qui eligendi dolores! Vero, quae.</div>
+  <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut optio vel illum obcaecati nobis harum, quidem perferendis ipsa culpa, dignissimos quisquam facere quos pariatur ipsam ea amet neque earum?</div>
+</body>
+</html>

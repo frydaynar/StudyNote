@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>background 4</title>
+	<style>
+  .one {
+    width: 1800px;
+    height: 1000px;
+    background-image: url(../../images/ai-generated-8687486_1280.jpg);
+    background-repeat: no-repeat;
+    background-color: #ff0;
+    background-size: 800px;
+    background-position: center center;
+  }
+  .two {
+    background-color: #0ff;
+
+    /* <img> 이미지 크기 조정되지 않음 */
+    background-size: 400px;
+
+    width: 600px;
+    height: 600px;
+
+    /* 
+    [object-fit] ============================================================
+    * fill        : 영역에 가득 차게
+    * contain     : 이미지가 잘리는 부분 없이 모두 표현
+                  : 여백이 생길 수 있음
+    * cover       : 이미지가 찌그러지지 않는 한도 내에서 가장 크게
+                  : 이미지 잘리는 부분이 생길 수 있음
+    * none        : 원래 이미지 크기 유지하면서, 가운데 보여지도록 자동 설정
+    * scale-down  : none 또는  contain 중 더 적절한 방향으로 이미지 크기 조정
+    ========================================================================= 
+    */
+    object-fit: scale-down;
+    background-position: top right;
+  }
+</style>
+</head>
+<body>
+	<div class="one">여기에 이미지 표시</div>
+  <div>
+    <img src="../../images/ai-generated-8687486_1280.jpg" alt="실험군 이미지" class="two">
+  </div>
+  <div>
+    <img src="../../images/ai-generated-8687486_1280.jpg" alt="대조군 이미지">
+  </div>
+</body>
+</html>
