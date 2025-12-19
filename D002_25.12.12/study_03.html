@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {box-sizing: border-box;}
+    html, body {margin: 0; padding: 0;}
+    /* display: flex → 나열할때 많이 사용해서 주로 메뉴에서 이용됨 */
+    /* li를 정렬할거면 ul에 display를 줘야함 */
+    /* flex-direction : 축선 바꾸기 */
+    /* column → 원래는 X축으로 정렬이지만 flex는 X축이 기본이기 때문에 column과 row가 반대로 적용됨  */
+    /* column-reverse : 역순 정렬 */
+    /* 정렬의 4가지 방법 : column, row, column-reverse, row-reverse */
+    /* ul { display: flex; gap: 5px; flex-direction: column;
+      margin: 0; padding-left: 0; list-style-type: none; 
+    }
+     ul { display: flex; gap: 5px; flex-direction: row;
+      margin: 0; padding-left: 0; list-style-type: none; 
+    }
+    ul { display: flex; gap: 5px; flex-direction: column-reverse;
+      margin: 0; padding-left: 0; list-style-type: none; 
+    }
+     ul { display: flex; gap: 5px; flex-direction: row-reverse;
+      margin: 0; padding-left: 0; list-style-type: none; 
+    } */
+    ul { display: flex;
+      margin: 0; padding-left: 0; list-style-type: none; 
+    }
+    /* flex-grow : 비율로 유연하게 늘려줌. 0과 1(균등하게 줘라)밖에 없으며 기본값은 0 */
+    /* 실제 사이트를 보면 잘 사용은 안함 */
+    /* flex-grow로 유연하게 만들어서 width 전체 고정은 안됨 → 잘 보면 미묘하게 다름 */
+    /* li { flex-grow: 1; width: 100px;
+			text-align: center; font-weight: bold; border: 1px solid #000;
+    } */
+    li { flex-grow: 1;
+			text-align: center; font-weight: bold; border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+    <!-- ul, li : 목록화 시키겠다 -->
+  <ul>
+        <!-- 예제1) flex에 width가 적용이 된 이유 :
+         요소가 가지는 특성 display가 div와 다름(애초에 보여지는 요소가 다르다).
+         div는 block이지만 li는 list-item으로 역할이 다름  -->
+		<li style="width: 100px;">A</li>
+		<li>B</li>
+		<li>C</li>
+        <li>D</li>
+        <!-- flex-grow를 head의 style과 똑같이 줄거면 따로 줄 필요가 없음 -->
+		<!-- <li style="flex-grow: 1;">D</li> -->
+		<li>E</li>
+		<li>F</li>
+	</ul>
+    <!-- 예제1) flex에 width가 적용이 된 이유 :
+         하지만 아래와 같은 경우에도 width가 적용되는 것을 볼 수 있기에 특성 display가 다른게 이유는 아님.
+         실제 이유 : flex를 직접 준거는 부모이기에 부모에 적용은 안되지만, 자식단에서는 가능함   -->
+    <!-- <div style="display: flex;">
+        <div style="width: 100px;">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div> -->
+</body>
+</html>
