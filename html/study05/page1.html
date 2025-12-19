@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>이미지</title>
+	<style>
+		.img {
+				margin: 10px;
+				width: 150px;
+				height: 150px;
+				background-color: gray;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+		}
+		.round {
+				border-radius: 10%;
+		}
+		.circle {
+				border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1>img 태그</h1>
+	<div>
+		귀여운 용 <br>
+		<img src="../../images/lizard.jpg" alt="귀여운 용 입니다." title="귀여운 용" width="600px">
+	</div>
+	<hr/>
+	<div class="img" style="background-image:url('../../images/img.jpg');"></div>
+	<div class="img round" style="background-image:url('../../images/img.jpg');"></div>
+	<div class="img circle" style="background-image:url('../../images/img.jpg');"></div>
+	<img src="../../images/img.jpg" alt="">
+</body>
+</html>

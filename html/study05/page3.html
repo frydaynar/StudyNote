@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>테이블</title>
+</head>
+<body>
+	<h1>테이블 태그</h1>
+
+	<table border="1" width="100%">
+		<caption>과일 테이블</caption>
+		<colgroup>
+			<col width="20%">
+			<col witdh="30%">
+			<col>   
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">번호</th>
+				<th scope="col">과일명</th>
+				<th scope="col">수량</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>1</td> <td rowspan="2">사과</td> <td>10</td>
+			</tr>
+			<tr>
+				<td>2</td> <td>5</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td colspan="2">총 수량</td> <td>15</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
