@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select name="txt">
+            <!--
+                value를 정의함으로써 보여지는 값과 실제 전달되는 값을 다르게 할 수 있음
+                -> 공통코드라고 불리며 필수로 사용 됨
+            -->
+            <option value="0">선택하세요</option>
+            <option value="1">나라</option>
+            <option value="2">도인</option>
+            <option value="3">윤서</option>
+            <option value="4">대훈</option>
+        </select>
+
+        <select name="item">
+            <!-- 
+                select box를 2번 이상 만들 때 그룹화 시키면 유용함
+            -->
+            <optgroup label="서울">
+                <option>신월동</option>
+                <option>노원</option>
+            </optgroup>
+            <optgroup label="부천/인천">
+                <option>신중동</option>
+                <option>부평</option>
+            </optgroup>
+        </select>
+
+        <div>
+            <!-- 
+                checked 속성을 통해 선택되있는 형태로 만들 수 있음
+                단, radio는 한 개만 선택 될 수 있어서 checked는 한 개만 적용
+            -->
+            <label for="r1">사과</label>
+            <input type="radio" name="radio" id="r1" value="r1" checked />
+
+            <label for="r2">바나나</label>
+            <input type="radio" name="radio" value="r2" />
+
+            <label for="r3">귤</label>
+            <input type="radio" name="radio" id="r3" value="r3" />
+        </div>
+
+        <hr />
+
+        <div>
+            <!-- 
+                checked 속성을 통해 선택되있는 형태로 만들 수 있음
+                radio와 다르게 여러 개 선택 가능
+            -->
+            <input type="checkbox" name="checkbox" value="c1" checked/>
+            <input type="checkbox" name="checkbox" value="c2" />
+            <input type="checkbox" name="checkbox" value="c3" checked/>
+        </div>
+
+        <button type="submit">요청</button>
+    </form>
+</body>
+</html>

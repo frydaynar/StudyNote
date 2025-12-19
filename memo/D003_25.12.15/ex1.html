@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form 예제</title>
+    <style>
+        * {box-sizing: border-box;}
+        html,body {margin: 0; padding: 0;}
+
+        .header {width: 100%; padding: 20px 20px; background-color: #009688; font-size: 40px; color: white;}
+        
+        form {padding: 30px 20px;}
+        .text label {color: gray; font-size: 18px;}
+        .text input {width: 100%; padding: 0 0 30px 0; margin: 0 0 20px 0; border: 1px solid #ccc;}
+
+        label {display: block;}
+        .group {display: flex; padding: 30px 0 50px 0;}
+        .RadioGroup {padding-left: 30%;}
+
+        button {padding: 10px 30px 10px 40px; border: 0; background-color: #009688; color: white; font-size: 18px;}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        Input Form
+    </div>
+    
+    <form>
+        <div class="text">
+            <div>
+                <label for="txt">Name</label>
+                <input type="text" name="txt" id="txt" required>
+            </div>
+
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+
+            <div>
+                <label for="sub">Subject</label>
+                <input type="text" name="sub" id="sub" required style="padding: 0 0 70px 0;">
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="CheckboxGroup">
+                <label for="c1">
+                    <input type="checkbox" name="checkbox" id="c1" value="c1" checked />
+                    <span>Milk</span>
+                </label>
+
+                <label for="c2">
+                    <input type="checkbox" name="checkbox" id="c2" value="c2" />
+                    <span>Sugar</span>
+                </label>
+
+                <label for="c3">
+                    <input type="checkbox" name="checkbox" id="c3" value="c3" disabled />
+                    <span>Lemon (Disabled)</span>
+                </label>
+            </div>
+
+            <div class="RadioGroup">
+                <label for="r1">
+                    <input type="radio" name="radio" id="r1" value="r1" checked>
+                    <span>Male</span>
+                </label>
+                
+                <label for="r2">
+                    <input type="radio" name="radio" id="r2" value="r2">
+                    <span>Female</span>
+                </label>
+
+                <label for="r3">
+                    <input type="radio" name="radio" id="r3" value="r3" disabled>
+                    <span>Don't know (Disabled)</span>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit"> Send 〉</button>
+    </form>
+</body>
+</html>
