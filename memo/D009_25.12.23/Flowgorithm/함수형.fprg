@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#54632;&#49688;&#54805;"/>
+        <attribute name="authors" value="201"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-23 12:52:16 &#50724;&#54980;"/>
+        <attribute name="created" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzEyOjMwOjI4IOyYpO2bhDsxMDgwMTc="/>
+        <attribute name="edited" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzEyOjUyOjE2IOyYpO2bhDsxOzEwODEyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="0&#50640;&#49436; 10&#44620;&#51648; &#48152;&#48373; &#51473;&#50640; 5&#48372;&#45796; &#53356;&#44256; &#51089;&#51008;&#51648; &#52636;&#47141;&#54616;&#44592;"/>
+            <call expression="fn2(0, 10)"/>
+        </body>
+    </function>
+    <function name="fn1" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <if expression="a &gt; 5">
+                <then>
+                    <output expression="a &amp; &quot;&#44050;&#51008; 5 &#48372;&#45796; &#53356;&#45796;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="a &amp; &quot;&#44050;&#51008; 5&#48372;&#45796; &#51089;&#45796;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="fn2" type="None" variable="">
+        <parameters>
+            <parameter name="start" type="Integer" array="False"/>
+            <parameter name="end" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <comment text="&#49884;&#51089;&#44284; &#45149;&#51032; &#51221;&#49688;&#54805; &#44050;&#51012; &#48155;&#50500;&#49436; &#48152;&#48373; &#54620;&#45796;."/>
+            <for variable="index" start="start" end="end" direction="inc" step="1">
+                <comment text="&#54924;&#51204;&#50640; &#46384;&#46972; &#53356;&#44256; &#51089;&#51008;&#51648; &#54869;&#51064;"/>
+                <call expression="fn1(index)"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

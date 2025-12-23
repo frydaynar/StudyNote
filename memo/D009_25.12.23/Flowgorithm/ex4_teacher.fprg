@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="201"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-23 12:57:43 &#50724;&#54980;"/>
+        <attribute name="created" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzExOjM3OjU4IOyYpOyghDsxMDQyNTA="/>
+        <attribute name="edited" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzExOjUzOjI3IOyYpOyghDsxOzEwNDM1Mg=="/>
+        <attribute name="edited" value="aGk7REVTS1RPUC1ISUVEVTEyOzIwMjUtMTItMjM7MTI6NTc6NDMg7Jik7ZuEOzE7MTA4MTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1&#52264;&#50896; &#48176;&#50676; &#47564;&#46308;&#44592;"/>
+            <declare name="arr1" type="Integer" array="True" size="2"/>
+            <declare name="arr2" type="Integer" array="True" size="2"/>
+            <declare name="arr3" type="Integer" array="True" size="2"/>
+            <declare name="arr4" type="Integer" array="True" size="2"/>
+            <declare name="arr5" type="Integer" array="True" size="2"/>
+            <assign variable="arr1[0]" expression="3"/>
+            <assign variable="arr1[1]" expression="5"/>
+            <assign variable="arr2[0]" expression="6"/>
+            <assign variable="arr2[1]" expression="10"/>
+            <assign variable="arr3[0]" expression="9"/>
+            <assign variable="arr3[1]" expression="15"/>
+            <assign variable="arr4[0]" expression="12"/>
+            <assign variable="arr4[1]" expression="20"/>
+            <assign variable="arr5[0]" expression="15"/>
+            <assign variable="arr5[1]" expression="25"/>
+            <comment text="1&#52264;&#50896; &#48176;&#50676;&#51032; &#44050;&#51012; &#51060;&#50857;&#54616;&#50668; &#44273;&#51032; &#44050;&#51012; &#44396;&#54616;&#44592;"/>
+            <declare name="v" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="i == 0">
+                    <then>
+                        <output expression="&quot;&#44208;&#44284; : &quot; &amp; arr1[0] &amp; &quot; * &quot; &amp; arr1[1] &amp; &quot; = &quot; &amp; (arr1[0] * arr1[1])" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 1">
+                    <then>
+                        <output expression="&quot;&#44208;&#44284; : &quot; &amp; arr2[0] &amp; &quot; * &quot; &amp; arr2[1] &amp; &quot; = &quot; &amp; (arr2[0] * arr2[1])" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 2">
+                    <then>
+                        <output expression="&quot;&#44208;&#44284; : &quot; &amp; arr3[0] &amp; &quot; * &quot; &amp; arr3[1] &amp; &quot; = &quot; &amp; (arr3[0] * arr3[1])" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 3">
+                    <then>
+                        <output expression="&quot;&#44208;&#44284; : &quot; &amp; arr4[0] &amp; &quot; * &quot; &amp; arr4[1] &amp; &quot; = &quot; &amp; (arr4[0] * arr4[1])" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 4">
+                    <then>
+                        <output expression="&quot;&#44208;&#44284; : &quot; &amp; arr5[0] &amp; &quot; * &quot; &amp; arr5[1] &amp; &quot; = &quot; &amp; (arr5[0] * arr5[1])" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

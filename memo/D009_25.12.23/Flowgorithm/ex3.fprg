@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex3"/>
+        <attribute name="authors" value="hi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-23 10:54:29 &#50724;&#51204;"/>
+        <attribute name="created" value="aGk7REVTS1RPUC1ISUVEVTEyOzIwMjUtMTItMjM7MTA6NDM6NDIg7Jik7KCEOzEwNDMwNA=="/>
+        <attribute name="edited" value="aGk7REVTS1RPUC1ISUVEVTEyOzIwMjUtMTItMjM7MTA6NTQ6Mjkg7Jik7KCEOzE7MTA0NDE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="keyword" type="String" array="False" size=""/>
+            <assign variable="keyword" expression="&quot;javascript&quot;"/>
+            <declare name="arr" type="String" array="True" size="10"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="Char(keyword, i) != &quot;a&quot;">
+                    <then>
+                        <output expression="Char(keyword, i)" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

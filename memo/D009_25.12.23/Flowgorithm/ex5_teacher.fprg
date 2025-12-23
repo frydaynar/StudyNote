@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="201"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-23 11:37:54 &#50724;&#51204;"/>
+        <attribute name="created" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzExOjA5OjAyIOyYpOyghDsxMDQyMzg="/>
+        <attribute name="edited" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzExOjM3OjU0IOyYpOyghDsxOzEwNDM1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="star" type="String" array="False" size=""/>
+            <declare name="blank" type="String" array="False" size=""/>
+            <assign variable="star" expression="&quot;O&quot;"/>
+            <assign variable="blank" expression="&quot;X&quot;"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <declare name="row" type="String" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="row" expression="&quot;&quot;"/>
+                <for variable="j" start="0" end="4" direction="inc" step="1">
+                    <if expression="(i == 0 &amp;&amp; j == 2) || (i == 4 &amp;&amp; j == 2)">
+                        <then>
+                            <assign variable="row" expression="row &amp; star"/>
+                        </then>
+                        <else>
+                            <if expression="((i == 1 &amp;&amp; j == 1) || (i == 1 &amp;&amp; j == 2) || (i == 1 &amp;&amp; j == 3)) || ((i == 3 &amp;&amp; j == 1) || (i == 3 &amp;&amp; j == 2) || (i == 3 &amp;&amp; j == 3))">
+                                <then>
+                                    <assign variable="row" expression="row &amp; star"/>
+                                </then>
+                                <else>
+                                    <if expression="i == 2">
+                                        <then>
+                                            <assign variable="row" expression="row &amp; star"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="row" expression="row &amp; blank"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </for>
+                <output expression="row" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

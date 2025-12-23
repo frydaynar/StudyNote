@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="201"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-23 01:06:34 &#50724;&#54980;"/>
+        <attribute name="created" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzExOjM3OjU4IOyYpOyghDsxMDQyNTA="/>
+        <attribute name="edited" value="MjAxO0RFU0tUT1AtSElFRFUwMDsyMDI1LTEyLTIzOzExOjUzOjI3IOyYpOyghDsxOzEwNDM1Mg=="/>
+        <attribute name="edited" value="aGk7REVTS1RPUC1ISUVEVTEyOzIwMjUtMTItMjM7MDE6MDY6MzQg7Jik7ZuEOzU7MTA4MTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#52636;&#47141; &#54616;&#44592;"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <comment text="&#48152;&#48373;&#47928;&#51012; &#51060;&#50857;&#54616;&#50668; &#44273;&#49480; &#49885;&#51012; &#52636;&#47141;&#54616;&#44592;"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="i == 0">
+                    <then>
+                        <call expression="fn1(3, 5)"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 1">
+                    <then>
+                        <call expression="fn1(6, 10)"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 2">
+                    <then>
+                        <call expression="fn1(9, 15)"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 3">
+                    <then>
+                        <call expression="fn1(12, 20)"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 4">
+                    <then>
+                        <call expression="fn1(15, 25)"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+    <function name="fn1" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <comment text="1&#52264;&#50896; &#48176;&#50676; &#47564;&#46308;&#44592;"/>
+            <declare name="arr" type="Integer" array="True" size="2"/>
+            <assign variable="arr[0]" expression="a"/>
+            <assign variable="arr[1]" expression="b"/>
+            <output expression="a &amp; &quot;*&quot; &amp; b &amp; &quot;=&quot; &amp; arr[0] * arr[1]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

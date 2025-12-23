@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex4"/>
+        <attribute name="authors" value="hi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-23 12:09:05 &#50724;&#54980;"/>
+        <attribute name="created" value="aGk7REVTS1RPUC1ISUVEVTEyOzIwMjUtMTItMjM7MTE6NTY6MjAg7Jik7KCEOzEwNDMwNQ=="/>
+        <attribute name="edited" value="aGk7REVTS1RPUC1ISUVEVTEyOzIwMjUtMTItMjM7MTI6MDk6MDUg7Jik7ZuEOzI7MTA4MTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="True" size="2"/>
+            <assign variable="num1[0]" expression="3"/>
+            <assign variable="num1[1]" expression="5"/>
+            <declare name="num2" type="Integer" array="True" size="2"/>
+            <assign variable="num2[0]" expression="6"/>
+            <assign variable="num2[1]" expression="10"/>
+            <declare name="num3" type="Integer" array="True" size="2"/>
+            <assign variable="num3[0]" expression="9"/>
+            <assign variable="num3[1]" expression="15"/>
+            <declare name="num4" type="Integer" array="True" size="2"/>
+            <assign variable="num4[0]" expression="12"/>
+            <assign variable="num4[1]" expression="20"/>
+            <declare name="num5" type="Integer" array="True" size="2"/>
+            <assign variable="num5[0]" expression="15"/>
+            <assign variable="num5[1]" expression="25"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="i == 0">
+                    <then>
+                        <output expression="num1[0]&amp;&quot;*&quot;&amp;num1[1]&amp;&quot;=&quot;&amp;num1[0]*num1[1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 1">
+                    <then>
+                        <output expression="num2[0]&amp;&quot;*&quot;&amp;num2[1]&amp;&quot;=&quot;&amp;num2[0]*num2[1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 2">
+                    <then>
+                        <output expression="num3[0]&amp;&quot;*&quot;&amp;num3[1]&amp;&quot;=&quot;&amp;num3[0]*num3[1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 3">
+                    <then>
+                        <output expression="num4[0]&amp;&quot;*&quot;&amp;num4[1]&amp;&quot;=&quot;&amp;num4[0]*num4[1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="i == 4">
+                    <then>
+                        <output expression="num5[0]&amp;&quot;*&quot;&amp;num5[1]&amp;&quot;=&quot;&amp;num5[0]*num5[1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
